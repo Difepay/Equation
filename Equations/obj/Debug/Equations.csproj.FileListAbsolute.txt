@@ -1,0 +1,8 @@
+C:\Users\student\source\repos\Equations\Equations\bin\Debug\Equations.exe.config
+C:\Users\student\source\repos\Equations\Equations\bin\Debug\Equations.exe
+C:\Users\student\source\repos\Equations\Equations\bin\Debug\Equations.pdb
+C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.csproj.AssemblyReference.cache
+C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.csproj.SuggestedBindingRedirects.cache
+C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.exe
+C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.pdb
