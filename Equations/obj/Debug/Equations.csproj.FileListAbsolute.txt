@@ -6,3 +6,11 @@ C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.csproj.Sug
 C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
 C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.exe
 C:\Users\student\source\repos\Equations\Equations\obj\Debug\Equations.pdb
+C:\Users\dmitr\source\repos\Equation\Equations\obj\Debug\Equations.csproj.AssemblyReference.cache
+C:\Users\dmitr\source\repos\Equation\Equations\obj\Debug\Equations.csproj.SuggestedBindingRedirects.cache
+C:\Users\dmitr\source\repos\Equation\Equations\obj\Debug\Equations.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\source\repos\Equation\Equations\obj\Debug\Equations.exe
+C:\Users\dmitr\source\repos\Equation\Equations\obj\Debug\Equations.pdb
+C:\Users\dmitr\source\repos\Equation\Equations\bin\Debug\Equations.exe.config
+C:\Users\dmitr\source\repos\Equation\Equations\bin\Debug\Equations.exe
+C:\Users\dmitr\source\repos\Equation\Equations\bin\Debug\Equations.pdb

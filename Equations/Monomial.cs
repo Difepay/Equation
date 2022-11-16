@@ -1,31 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Equations
 {
     internal class Monomial
     {
-        public double factor;
-        public uint power;
-        public char name;
+        private double factor;
+        private uint power;
+        private char name;
+        private bool head;
+
 
         // Constructors
+
+        // Default constructor
         public Monomial()
         {
             this.factor = 0;
             this.power = 0;
             this.name = '\0';
+            this.head = false;
         }
+
+        // Parameter constructor
         public Monomial(double factor, uint power, char name)
         {
             this.factor = factor;
             this.power = power;
             this.name = name;
+            this.head = false;
         }
-
+        
+        // Copy constructor
         public Monomial(Monomial a)
         {
             this.factor = a.factor;
@@ -37,7 +43,15 @@ namespace Equations
         // Methods
         public void Print()
         {
-            string factorStr = this.factor > 0 ? $"+ {this.factor}" : $"- {-this.factor}";
+            string factorStr = "";
+            if (this.head)
+                factorStr = this.factor < 0 ? "-" : "";
+            else
+                factorStr = this.factor > 0 ? $"+ " : $"- ";
+
+            if (Math.Abs(this.factor) != 1)
+                factorStr += $"{Math.Abs(this.factor)}";
+
             if (this.power == 0)
                 Console.Write(factorStr);
             else if (this.power == 1)
@@ -45,6 +59,24 @@ namespace Equations
             else
                 Console.Write($"{factorStr}{this.name}^{this.power} ");
         }
+
+
+        // Getters
+        public uint GetPower() { return this.power; }
+
+        public double GetFactor() { return this.factor; }
+
+        public char GetName() { return this.name; }
+
+
+        // Setters
+        public void SetPower(uint power) { this.power = power; }
+
+        public void SetFactor(double factor) { this.factor = factor; }
+
+        public void SetName(char name) { this.name = name; }
+
+        public void SetHead(bool head) { this.head = head; }
 
 
         // Operators
@@ -65,7 +97,5 @@ namespace Equations
         {
             return m1.power < m2.power;
         }
-
-
     }
 }

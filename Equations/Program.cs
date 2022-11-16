@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Equations
 {
@@ -11,9 +7,8 @@ namespace Equations
         static void Main(string[] args)
         {
             Console.Write("Enter the equation: ");
-            string equation = Console.ReadLine().ToLower().Trim().Replace(" ", "").Replace(',', '.').Replace("**", "^");
+            string equation = GetEquation();
 
-            
             if (!StringValid(equation))
             {
                 Console.WriteLine("Your equation is incorrect!");
@@ -22,13 +17,22 @@ namespace Equations
 
             Polynomial polynomial = new Polynomial(equation);
 
-           
+            polynomial.Print();
+
             polynomial.Sort();
+            Console.WriteLine("After sort:");
+            polynomial.Print();
+
             polynomial.Insert();
+            Console.WriteLine("After inserting:");
             polynomial.Print();
 
             polynomial.GetSimpleSolution();
-            polynomial.DivideByPolinomial(0);
+            Console.WriteLine("After calculas:");
+            polynomial.Print();
+
+            Console.WriteLine("Monomial: ");
+            polynomial.PrintSolutions();
 
 
             Console.ReadKey();
@@ -59,6 +63,11 @@ namespace Equations
                 if (Char.IsLetter(c))
                     return c;
             return '\0';
+        }
+
+        public static string GetEquation()
+        {
+            return Console.ReadLine().ToLower().Trim().Replace(" ", "").Replace(',', '.').Replace("**", "^");
         }
     }
 }
